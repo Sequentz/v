@@ -12,13 +12,16 @@ const Header = () => {
           <span className="text-xl font-bold">Fitness Facility</span>
         </Link>
         <nav className="hidden md:flex items-center gap-6">
-          <Link className="hover:underline" href="#">
+        <Link className="hover:underline" href="/home">
+            Home
+          </Link>
+          <Link className="hover:underline" href="/shop">
             Shop
           </Link>
           <Link className="hover:underline" href="/about">
             About
           </Link>
-          <Link className="hover:underline" href="#">
+          <Link className="hover:underline" href="/contact">
             Contact
           </Link>
         </nav>
