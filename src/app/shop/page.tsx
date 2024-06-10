@@ -8,17 +8,17 @@ export default function Shop() {
 <main className="flex-1">
         <section className="bg-gray-500 py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center">Roar now, meauw later</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-8 text-center">Roar now, miauw later</h1>
             <section className="bg-gray-500 py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Shop by Category / Dit word een slider</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 text-center">Categoriën/ Dit word een slider</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
                 <img
                   alt="Apparel"
                   className="w-full h-40 object-cover"
                   height="200"
-                  src="/placeholder.svg"
+                  src="/merch.png"
                   style={{
                     aspectRatio: "300/200",
                     objectFit: "cover",
@@ -35,7 +35,7 @@ export default function Shop() {
                   alt="Supplements"
                   className="w-full h-40 object-cover"
                   height="200"
-                  src="/placeholder.svg"
+                  src="/shake.png"
                   style={{
                     aspectRatio: "300/200",
                     objectFit: "cover",
@@ -52,7 +52,7 @@ export default function Shop() {
                   alt="Accessories"
                   className="w-full h-40 object-cover"
                   height="200"
-                  src="/placeholder.svg"
+                  src="/bars.jpeg"
                   style={{
                     aspectRatio: "300/200",
                     objectFit: "cover",
@@ -69,7 +69,7 @@ export default function Shop() {
                   alt="Equipment"
                   className="w-full h-40 object-cover"
                   height="200"
-                  src="/placeholder.svg"
+                  src="/drinkz.png"
                   style={{
                     aspectRatio: "300/200",
                     objectFit: "cover",
@@ -90,7 +90,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -111,7 +111,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -133,7 +133,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -154,7 +154,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -172,7 +172,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -190,7 +190,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -208,7 +208,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -226,7 +226,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -251,7 +251,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -272,7 +272,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -290,7 +290,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -308,7 +308,7 @@ export default function Shop() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/test.jpeg"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
@@ -321,78 +321,7 @@ export default function Shop() {
                   <Button className="w-full">Add to Cart</Button>
                 </div>
               </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  alt="Product"
-                  className="w-full h-48 object-cover"
-                  height="300"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "300/300",
-                    objectFit: "cover",
-                  }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Jump Rope</h3>
-                  <p className="text-gray-600 mb-4">$14.99</p>
-                  <Button className="w-full">Add to Cart</Button>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  alt="Product"
-                  className="w-full h-48 object-cover"
-                  height="300"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "300/300",
-                    objectFit: "cover",
-                  }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Exercise Ball</h3>
-                  <p className="text-gray-600 mb-4">$39.99</p>
-                  <Button className="w-full">Add to Cart</Button>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  alt="Product"
-                  className="w-full h-48 object-cover"
-                  height="300"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "300/300",
-                    objectFit: "cover",
-                  }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Resistance Tubes</h3>
-                  <p className="text-gray-600 mb-4">$24.99</p>
-                  <Button className="w-full">Add to Cart</Button>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  alt="Product"
-                  className="w-full h-48 object-cover"
-                  height="300"
-                  src="/placeholder.svg"
-                  style={{
-                    aspectRatio: "300/300",
-                    objectFit: "cover",
-                  }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Foam Roller</h3>
-                  <p className="text-gray-600 mb-4">$34.99</p>
-                  <Button className="w-full">Add to Cart</Button>
-                </div>
-              </div>
+              
             </div>
           </div>
         </section>

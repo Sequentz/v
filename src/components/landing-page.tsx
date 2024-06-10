@@ -53,7 +53,7 @@ export function LandingPage() {
                   alt="Hero"
                   className="rounded-lg object-cover"
                   height="500"
-                  src="/placeholder.svg"
+                  src="/gym.png"
                   style={{
                     aspectRatio: "500/500",
                     objectFit: "cover",
@@ -94,7 +94,7 @@ export function LandingPage() {
                   alt="Product"
                   className="w-full h-48 object-cover"
                   height="300"
-                  src="/placeholder.svg"
+                  src="/gym.png"
                   style={{
                     aspectRatio: "300/300",
                     objectFit: "cover",
