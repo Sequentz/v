@@ -31,17 +31,21 @@ export function LandingPage() {
 
     <div className="flex flex-col min-h-[100dvh]">
       <main className="flex-1">
-        <section className="bg-gray-100 py-12 md:py-20">
+        <section className="bg-gray-700 py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h1 className="text-3xl md:text-5xl font-bold mb-4">Elevate Your Fitness Journey</h1>
-                <p className="text-gray-600 mb-6">Discover the best fitness products to help you reach your goals.</p>
+                <h1 className="text-3xl md:text-5xl font-bold mb-4">Welcome to <strong className="text-black">ROAR .</strong></h1>
+                <p className="text-gray-500 mb-6">Old School training facility that focuses on quality, not qwantity.</p>
                 <div className="flex gap-4">
-                  <Button size="lg">Shop Now</Button>
-                  <Button size="lg" variant="outline">
-                    Learn More
-                  </Button>
+                  <Link href="/shop">
+                  <Button size="lg">Shop Now</Button></Link>
+                  
+                  <Link href="/about">
+                    <Button  size="lg" variant="outline">
+                      Learn More
+                    </Button>
+                  </Link>
                 </div>
               </div>
               <div>
