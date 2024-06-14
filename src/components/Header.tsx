@@ -10,11 +10,12 @@ const Header = () => {
       <header className="bg-black strong text-xl   py-4 px-6 md:px-10 flex items-center justify-between">
         <Link className="flex items-center gap-2" href="#">
           <Logo />
-          <span className="text-xl font-bold">ROAR</span>
+          <span className="text-xl font-bold font-sans">ROAR</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6 text-white" >
-        <Link className="hover:underline hover:text-white" href="/">
+        <nav className="hidden md:flex items-center gap-6 text-white font-sans " >
+        <Link className="hover:underline hover:text-opacity-75" href="/">
             Home
+            
           </Link>
           <Link className="hover:underline hover:text-white" href="/shop">
             Shop

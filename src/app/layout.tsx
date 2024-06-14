@@ -22,7 +22,7 @@ export default function RootLayout({
       {/* Any additional head tags can be added here */}
     </head>
     <body className={inter.className} >
-      <Header />
+      <Header  />
       <main className="bg-gradient-to-r from-black via-gray-500 to-black">{children}</main>
       <Footer />
     </body>

@@ -12,16 +12,16 @@ const Page = () => {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                  About <strong className="text-black">ROAR</strong>
+                <h1 className="text-3xl md:text-5xl font-bold mb-10">
+                  About<strong className="text-black font-sans ml-4 ">ROAR .</strong>
                 </h1>
-                <p className="text-gray-300 mb-6">
+                <p className="text-gray-300 mb-6 text-lg mt-6">
                   Al sinds mijn 13de ben ik gepassioneerd door fitness en een gezonde levensstijl. Hierdoor ben ik mezelf door de jaren heen verder gaan verdiepen in deze aspecten.
                 </p>
-                <p className="text-gray-300 mb-6">
+                <p className="text-gray-300 mb-6 text-lg mt-6">
                   Ikzelf vind dat fitness en gezonde voeding niet alleen een impact heeft op mijn lichaam maar zeker en vast ook op mentaal vlak.
                 </p>
-                <p className="text-gray-300 mb-6">
+                <p className="text-gray-300 mb-6 text-lg mt-6">
                   Het is altijd al mijn grote droom geweest om mijn passie en kennis bij te brengen aan anderen zodat ze de beste versie van zichzelf bereiken zowel fysiek als mentaal.
                 </p>
               </div>

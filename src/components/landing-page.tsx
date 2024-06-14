@@ -47,18 +47,18 @@ export async function LandingPage() {
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
-                <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                  Welcome to <strong className="text-black">ROAR .</strong>
+                <h1 className="text-3xl md:text-5xl font-bold mb-4 ">
+                  Welcome to <strong className="text-black font-sans">ROAR .</strong>
                 </h1>
-                <p className="text-gray-500 mb-6">
+                <p className="text-gray-400 mb-6">
                   Old School training facility that focuses on quality, not quantity.
                 </p>
                 <div className="flex gap-4">
                   <Link href="/shop">
-                    <Button size="lg">Shop Now</Button>
+                    <Button size="lg" className="font-sans">Shop Now</Button>
                   </Link>
                   <Link href="/about">
-                    <Button size="lg" variant="outline">
+                    <Button size="lg" variant="outline" className="font-sans">
                       Learn More
                     </Button>
                   </Link>
@@ -164,7 +164,7 @@ export async function LandingPage() {
                           d="M5 1 1 5l4 4"
                         />
                       </svg>
-                      <span className="sr-only">Previous</span>
+                      <span className="sr-only ">Previous</span>
                     </span>
                   </button>
                   <button
@@ -198,7 +198,7 @@ export async function LandingPage() {
         </section>
         <section className="py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8">Featured Products</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 font-sans">Featured Products</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
               <div className="bg-white rounded-lg shadow-md overflow-hidden">
                 <img
@@ -212,12 +212,12 @@ export async function LandingPage() {
                   }}
                   width="300"
                 />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Protein Bars</h3>
+                <div className="p-4 relative">
+                  <h3 className="text-lg text-black  font-sans mb-2">Protein Bars</h3>
                   <p className="text-gray-600 mb-4">High-quality protein bars to fuel your workouts.</p>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-900 font-bold">$24.99</span>
-                    <Button size="sm">View Details</Button>
+                    <Button className="font-sans absolute bottom-2 right-2" size="sm">View Details</Button>
                   </div>
                 </div>
               </div>
@@ -233,12 +233,12 @@ export async function LandingPage() {
                   }}
                   width="300"
                 />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Fitness Apparel</h3>
-                  <p className="text-gray-600 mb-4">Comfortable and stylish workout clothes.</p>
+                <div className="p-4 relative">
+                  <h3 className="text-lg text-black   font-sans mb-2">Fitness Apparel</h3>
+                  <p className="text-gray-600 mb-4">Comfortable and stylish fitness clothing with gret quality.</p>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-900 font-bold">$39.99</span>
-                    <Button size="sm">View Details</Button>
+                    <Button className="font-sans absolute bottom-2 right-2" size="sm">View Details</Button>
                   </div>
                 </div>
               </div>
@@ -254,12 +254,12 @@ export async function LandingPage() {
                   }}
                   width="300"
                 />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Resistance Bands</h3>
+                <div className="p-4 relative">
+                  <h3 className="text-lg text-black  font-sans mb-2">Resistance Bands</h3>
                   <p className="text-gray-600 mb-4">Versatile resistance bands for strength training.</p>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-900 font-bold">$14.99</span>
-                    <Button size="sm">View Details</Button>
+                    <Button className="font-sans absolute bottom-2 right-2" size="sm">View Details</Button>
                   </div>
                 </div>
               </div>
@@ -275,12 +275,12 @@ export async function LandingPage() {
                   }}
                   width="300"
                 />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Fitness Accessories</h3>
+                <div className="p-4 relative">
+                  <h3 className="text-lg text-black  font-sans mb-2">Fitness Accessories</h3>
                   <p className="text-gray-600 mb-4">Enhance your workout with our fitness accessories.</p>
                   <div className="flex items-center justify-between">
                     <span className="text-gray-900 font-bold">$9.99</span>
-                    <Button size="sm">View Details</Button>
+                    <Button className="font-sans absolute bottom-2 right-2" size="sm">View Details</Button>
                   </div>
                 </div>
               </div>
@@ -289,7 +289,7 @@ export async function LandingPage() {
         </section>
         <section className="bg-gradient-to-r from-black via-gray-500 to-black py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8">Shop by Category</h2>
+            <h2 className="text-2xl md:text-3xl font-bold mb-8 font-sans ">Shop by Category</h2>
             {/* {categories && categories.data.map((category) => (
               <Link
                 className="bg-white rounded-lg shadow-md overflow-hidden"
@@ -314,7 +314,7 @@ export async function LandingPage() {
               </Link>
             ))} */}
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
+              <Link className="bg-white rounded-lg shadow-md overflow-hidden " href="#">
                 <img
                   alt="Apparel"
                   className="w-full h-40 object-cover"
@@ -327,8 +327,8 @@ export async function LandingPage() {
                   width="300"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Apparel</h3>
-                  <p className="text-gray-600">Discover our collection of fitness apparel.</p>
+                  <h3 className="text-xl text-center text-black font-sans mb-2">Apparel</h3>
+
                 </div>
               </Link>
               <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
@@ -344,8 +344,8 @@ export async function LandingPage() {
                   width="300"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Supplements</h3>
-                  <p className="text-gray-600">Explore our selection of high-quality supplements.</p>
+                  <h3 className="text-xl text-center text-black font-sans mb-2">Supplements</h3>
+
                 </div>
               </Link>
               <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
@@ -361,8 +361,8 @@ export async function LandingPage() {
                   width="300"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Accessories</h3>
-                  <p className="text-gray-600">Find the perfect fitness accessories to enhance your workouts.</p>
+                  <h3 className="text-xl text-center text-black  font-sans mb-2">Accessories</h3>
+
                 </div>
               </Link>
               <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
@@ -378,8 +378,8 @@ export async function LandingPage() {
                   width="300"
                 />
                 <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">Equipment</h3>
-                  <p className="text-gray-600">Browse our selection of high-quality fitness equipment.</p>
+                  <h3 className="text-xl text-center text-black font-sans mb-2">Equipment</h3>
+
                 </div>
               </Link>
             </div>
