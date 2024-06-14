@@ -21,9 +21,9 @@ export default function RootLayout({
     <head>
       {/* Any additional head tags can be added here */}
     </head>
-    <body className={inter.className}>
+    <body className={inter.className} >
       <Header />
-      <main>{children}</main>
+      <main className="bg-gradient-to-r from-black via-gray-500 to-black">{children}</main>
       <Footer />
     </body>
   </html>

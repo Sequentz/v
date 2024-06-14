@@ -7,22 +7,22 @@ import Logo from "@/components/ui/logo"
 const Header = () => {
   return (
     
-      <header className="bg-gray-900 text-white py-4 px-6 md:px-10 flex items-center justify-between">
+      <header className="bg-black strong text-xl   py-4 px-6 md:px-10 flex items-center justify-between">
         <Link className="flex items-center gap-2" href="#">
           <Logo />
           <span className="text-xl font-bold">ROAR</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6">
-        <Link className="hover:underline" href="/">
+        <nav className="hidden md:flex items-center gap-6 text-white" >
+        <Link className="hover:underline hover:text-white" href="/">
             Home
           </Link>
-          <Link className="hover:underline" href="/shop">
+          <Link className="hover:underline hover:text-white" href="/shop">
             Shop
           </Link>
-          <Link className="hover:underline" href="/about">
+          <Link className="hover:underline hover:text-white" href="/about">
             About
           </Link>
-          <Link className="hover:underline" href="/contact">
+          <Link className="hover:underline hover:text-white" href="/contact">
             Contact
           </Link>
         </nav>
@@ -31,10 +31,12 @@ const Header = () => {
             <SearchIcon className="h-6 w-6" />
             <span className="sr-only">Search</span>
           </Button>
+          <Link className="hover:underline" href="/cart">
           <Button className="rounded-full" size="icon" variant="ghost">
             <ShoppingCartIcon className="h-6 w-6" />
             <span className="sr-only">Cart</span>
           </Button>
+          </Link>
         </div>
       </header>
       

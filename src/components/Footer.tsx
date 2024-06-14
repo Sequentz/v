@@ -4,7 +4,7 @@ import Logo from "@/components/ui/logo"
 
 const Footer = () => {
   return (
-    <div><footer className="bg-gray-900 text-white py-6 px-4 md:px-6">
+    <div><footer className="bg-black text-white py-6 px-4 md:px-6">
     <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
       <div className="flex items-center gap-2">
         <Logo />

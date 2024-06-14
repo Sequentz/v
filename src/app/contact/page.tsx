@@ -5,7 +5,8 @@ import { Textarea } from "@/components/ui/textarea" // Make sure this is the cor
 import { Button } from "@/components/ui/button"
 import { MapPinIcon, PhoneIcon, MailIcon } from "@/components/contact"
 
-const page = () => {
+const page =  () => {
+
   return (
     <div>
       <main className="flex-1">
@@ -40,25 +41,16 @@ const page = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <PhoneIcon className="h-6 w-6" />
-                    <span>0412345678</span>
+                    <a href="tel:0412345678" >0412345678</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <MailIcon className="h-6 w-6" />
-                    <span>info@<strong className="text-black bold">roar</strong>coaching.be</span>
+                    <a href="mailto:info@roarcoaching.be">info@<strong className="text-black bold">roar</strong>coaching.be</a>
                   </div>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5022.89895056382!2d4.820101076442858!3d50.98936574841536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c15caf62c3b517%3A0x39631870fb7f9c0b!2sNijverheidslaan%208%2C%203200%20Aarschot!5e0!3m2!1snl!2sbe!4v1718189268870!5m2!1snl!2sbe" width="600" height="450" style={{border:0}} loading="lazy" ></iframe>
                 </div>
                 <div className="mt-8">
-                  <img
-                    alt="Map"
-                    className="w-full h-auto rounded-lg"
-                    height="400"
-                    src="/placeholder.svg"
-                    style={{
-                      aspectRatio: "600/400",
-                      objectFit: "cover",
-                    }}
-                    width="600"
-                  />
+                  
                 </div>
               </div>
             </div>
