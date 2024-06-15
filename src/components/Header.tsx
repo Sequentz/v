@@ -10,19 +10,19 @@ const Header = () => {
       <header className="bg-gray-900 text-white py-4 px-6 md:px-10 flex items-center justify-between">
         <Link className="flex items-center gap-2" href="#">
           <Logo />
-          <span className="text-xl font-bold">ROAR</span>
+          <span className="text-xl font-medium">ROAR</span>
         </Link>
-        <nav className="hidden md:flex items-center gap-6">
-        <Link className="hover:underline" href="/">
+        <nav className="hidden md:flex items-center gap-6 ">
+        <Link className="hover:underline font-medium" href="/">
             Home
           </Link>
-          <Link className="hover:underline" href="/shop">
+          <Link className="hover:underline font-medium" href="/shop">
             Shop
           </Link>
-          <Link className="hover:underline" href="/about">
+          <Link className="hover:underline font-medium" href="/about">
             About
           </Link>
-          <Link className="hover:underline" href="/contact">
+          <Link className="hover:underline font-medium" href="/contact">
             Contact
           </Link>
         </nav>

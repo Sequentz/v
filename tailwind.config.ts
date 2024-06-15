@@ -14,7 +14,10 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
+    fontFamily: {
+      lght: ['OPTIBankGothic-Light', 'sans-serif'], 
+      medium: ['OPTIBankGothic-Medium', 'serif']
   },
   plugins: [require("tailwindcss-animate")],
-};
+}};
 export default config;
