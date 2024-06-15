@@ -28,7 +28,7 @@ const page = () => {
                     <Label htmlFor="message" className="bold text-lg">Message</Label>
                     <Textarea id="message" placeholder="Enter your message" rows={5} />
                   </div>
-                  <Button className="mt-24" type="submit">Verzend</Button>
+                  <Button className="mt-24" type="submit">Send</Button>
                 </form>
               </div>
 

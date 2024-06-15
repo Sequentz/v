@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/components/CartContext";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 
@@ -18,14 +19,16 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-    <head>
-      {/* Any additional head tags can be added here */}
-    </head>
-    <body className={inter.className}>
-      <Header />
-      <main>{children}</main>
-      <Footer />
-    </body>
-  </html>
-);
+      <head>
+        {/* Any additional head tags can be added here */}
+      </head>
+      <body className={inter.className}>
+        <CartProvider>
+          <Header />
+          <main>{children}</main>
+          <Footer />
+        </CartProvider>
+      </body>
+    </html>
+  );
 }
