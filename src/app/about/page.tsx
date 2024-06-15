@@ -7,7 +7,7 @@ const Page = () => {
         {/* Add your header content here */}
       </header>
       <main className="flex-1">
-        <section className="bg-gray-500 py-12 md:py-20">
+        <section className="bg-gradient-to-r from-black via-gray-500 to-black py-12 md:py-20">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
