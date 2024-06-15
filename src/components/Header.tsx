@@ -15,6 +15,7 @@ const Header = () => {
         <nav className="hidden md:flex items-center gap-6 ">
         <Link className="hover:underline font-medium" href="/">
             Home
+            
           </Link>
           <Link className="hover:underline font-medium" href="/shop">
             Shop
@@ -31,10 +32,12 @@ const Header = () => {
             <SearchIcon className="h-6 w-6" />
             <span className="sr-only">Search</span>
           </Button>
+          <Link className="hover:underline" href="/cart">
           <Button className="rounded-full" size="icon" variant="ghost">
             <ShoppingCartIcon className="h-6 w-6" />
             <span className="sr-only">Cart</span>
           </Button>
+          </Link>
         </div>
       </header>
       

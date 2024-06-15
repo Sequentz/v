@@ -5,7 +5,8 @@ import { Textarea } from "@/components/ui/textarea" // Make sure this is the cor
 import { Button } from "@/components/ui/button"
 import { MapPinIcon, PhoneIcon, MailIcon } from "@/components/contact"
 
-const page = () => {
+const page =  () => {
+
   return (
     <div className="">
       <main className="flex-1 font-medium ">
@@ -48,6 +49,7 @@ const page = () => {
 
                     <a className="tracking-widest"  href="mailto:info@roarcoaching.be">info@<strong className="text-black bold">roar</strong>coaching.be</a>
                   </div>
+                  <iframe  className="rounded-lg"src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5022.89895056382!2d4.820101076442858!3d50.98936574841536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c15caf62c3b517%3A0x39631870fb7f9c0b!2sNijverheidslaan%208%2C%203200%20Aarschot!5e0!3m2!1snl!2sbe!4v1718189268870!5m2!1snl!2sbe" width="600" height="450" style={{border:0}} loading="lazy" ></iframe>
                 </div>
                 <div>
                 <iframe className="rounded-lg h-[210px] mt-2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2511.4494752819096!2d4.820101076442849!3d50.98936574841537!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c15caf62c15555%3A0xd1b54ea6f1fe03eb!2sNijverheidslaan%208t%2C%203200%20Aarschot!5e0!3m2!1snl!2sbe!4v1718447510196!5m2!1snl!2sbe" width="600" height="450"  loading="lazy" ></iframe>
