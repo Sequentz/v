@@ -48,7 +48,7 @@ export async function LandingPage() {
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
                 <h1 className="text-3xl md:text-5xl font-bold mb-4 ">
-                  Welcome to <strong className="text-black font-sans">ROAR .</strong>
+                  Welcome to <strong className="text-black font-medium">ROAR .</strong>
                 </h1>
                 <p className="text-gray-400 mb-6">
                   Old School training facility that focuses on quality, not quantity.
@@ -180,7 +180,7 @@ export async function LandingPage() {
                   width="300"
                 />
                 <div className="p-4">
-                  <h3 className="text-xl text-center text-black font-sans mb-2">Apparel</h3>
+                  <h3 className="text-xl text-center text-black font-sans mb-2 font-medium">Apparel</h3>
 
                 </div>
               </Link>
@@ -197,7 +197,7 @@ export async function LandingPage() {
                   width="300"
                 />
                 <div className="p-4">
-                  <h3 className="text-xl text-center text-black font-sans mb-2">Supplements</h3>
+                  <h3 className="text-xl text-center text-black font-sans mb-2 font-medium">Supplements</h3>
 
                 </div>
               </Link>
@@ -214,7 +214,7 @@ export async function LandingPage() {
                   width="300"
                 />
                 <div className="p-4">
-                  <h3 className="text-xl text-center text-black  font-sans mb-2">Accessories</h3>
+                  <h3 className="text-xl text-center text-black  font-sans mb-2 font-medium">Accessories</h3>
 
                 </div>
               </Link>
@@ -231,7 +231,7 @@ export async function LandingPage() {
                   width="300"
                 />
                 <div className="p-4">
-                  <h3 className="text-xl text-center text-black font-sans mb-2">Equipment</h3>
+                  <h3 className="text-xl text-center text-black font-sans mb-2 font-medium">Equipment</h3>
 
                 </div>
               </Link>

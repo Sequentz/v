@@ -7,7 +7,7 @@ import Logo from "@/components/ui/logo"
 const Header = () => {
   return (
     
-      <header className="bg-gray-900 text-white py-4 px-6 md:px-10 flex items-center justify-between">
+      <header className="bg-black text-white py-4 px-6 md:px-10 flex items-center justify-between">
         <Link className="flex items-center gap-2" href="#">
           <Logo />
           <span className="text-xl font-medium">ROAR</span>
