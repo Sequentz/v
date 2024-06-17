@@ -9,12 +9,12 @@
 import { IBM_Plex_Sans } from 'next/font/google'
 import { Chivo } from 'next/font/google'
 
-ibm_plex_sans({
+const ibmPlexSans = IBM_Plex_Sans({
   subsets: ['latin'],
   display: 'swap',
 })
 
-chivo({
+const chivo = Chivo({
   subsets: ['latin'],
   display: 'swap',
 })
@@ -25,20 +25,10 @@ To read more about using these fonts, please visit the Next.js documentation:
 **/
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+import Swiper from "swiper/bundle"
+import 'swiper/css/bundle'
 
 export async function LandingPage() {
-  // const categories = await fetch("http://vack.ddev.site/api/categories")
-  // const products = await fetch("http://vack.ddev.site/api/products")
-
-  // if (!categories.ok) {
-  //   throw new Error("Failed to fetch data")
-  // }
-  // if (!products.ok) {
-  //   throw new Error("Failed to fetch data")
-  // }
-  // const category = await categories.json()
-  // const product = await products.json()
-
   return (
     <div className="flex flex-col min-h-[100dvh] font-light">
       <main className="flex-1">
@@ -54,83 +44,11 @@ export async function LandingPage() {
                 </p>
                 <div className="flex gap-4">
                   <Link href="/shop">
-                    <Button size="lg" className="font-sans">Shop Now</Button>
+                    <Button size="lg" variant="outline"  className="font-sans text-black">Shop Now</Button>
                   </Link>
                   <Link href="/about">
-                    <Button size="lg" variant="outline" className="font-sans">Learn More</Button>
+                    <Button size="lg" variant="outline" className="font-sans text-black">Learn More</Button>
                   </Link>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  alt="Product"
-                  className="w-full h-48 object-cover"
-                  height="300"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/300", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4 relative">
-                  <h3 className="text-lg text-black font-sans mb-2">Protein Bars</h3>
-                  <p className="text-gray-600 mb-4">High-quality protein bars to fuel your workouts.</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-gray-900 font-bold">$24.99</span>
-                    <Button className="font-sans absolute bottom-2 right-2" size="sm">View Details</Button>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  alt="Product"
-                  className="w-full h-48 object-cover"
-                  height="300"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/300", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4 relative">
-                  <h3 className="text-lg text-black font-sans mb-2">Fitness Apparel</h3>
-                  <p className="text-gray-600 mb-4">Comfortable and stylish fitness clothing with great quality.</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-gray-900 font-bold">$39.99</span>
-                    <Button className="font-sans absolute bottom-2 right-2" size="sm">View Details</Button>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  alt="Product"
-                  className="w-full h-48 object-cover"
-                  height="300"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/300", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4 relative">
-                  <h3 className="text-lg text-black font-sans mb-2">Resistance Bands</h3>
-                  <p className="text-gray-600 mb-4">Versatile resistance bands for strength training.</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-gray-900 font-bold">$14.99</span>
-                    <Button className="font-sans absolute bottom-2 right-2" size="sm">View Details</Button>
-                  </div>
-                </div>
-              </div>
-              <div className="bg-white rounded-lg shadow-md overflow-hidden">
-                <img
-                  alt="Product"
-                  className="w-full h-48 object-cover"
-                  height="300"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/300", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4 relative">
-                  <h3 className="text-lg text-black font-sans mb-2">Fitness Accessories</h3>
-                  <p className="text-gray-600 mb-4">Enhance your workout with our fitness accessories.</p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-gray-900 font-bold">$9.99</span>
-                    <Button className="font-sans absolute bottom-2 right-2" size="sm">View Details</Button>
-                  </div>
                 </div>
               </div>
             </div>

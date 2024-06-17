@@ -1,33 +1,29 @@
-// components/Responsive3DCarousel.jsx
 "use client";
 
+import { useState } from "react";
 import { Carousel } from "react-responsive-3d-carousel";
-// import "react-responsive-3d-carousel/lib/styles.css";
 
-const Carousell = () => {
-  const handleFilter = () => {};
+const Carousell = ({ categories, onCategorySelect }) => {
   return (
-    <div className="flex justify-center items-center px-3 ">
+    <div className="flex flex-col items-center px-3">
       <Carousel
         showStatus={false}
         showIndicators={false}
         arrowsDefaultColor={"white"}
-        infiniteLoop={true}
+        infiniteLoop={false}
       >
-        <div>
-          <h1 className="text-center text-2xl bg-black">Merchandise</h1>
-          <img src="/merch.png" alt="example-image-1" />
-        </div>
-
-        <div>
-          <h1 className="text-center text-2xl bg-black">Snacks</h1>
-          <img src="/bars.jpeg" alt="example-image-2" />
-        </div>
-
-        <div>
-          <h1 className="text-center text-2xl bg-black">Drinks</h1>
-          <img src="/drinkz.png" alt="example-image-3" />
-        </div>
+        {categories.map((category, index) => (
+          <div key={index} onClick={() => onCategorySelect(category)}>
+            <h1 className="text-center text-xl sm:text-2xl bg-black capitalize py-2">
+              {category}
+            </h1>
+            <img
+              src={`/${category}.png`}
+              alt={`example-image-${index + 1}`}
+              className="w-full h-48 object-cover"
+            />
+          </div>
+        ))}
       </Carousel>
     </div>
   );
