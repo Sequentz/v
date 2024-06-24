@@ -80,17 +80,18 @@ const Header = () => {
           <Link className="hover:underline font-medium" href="/contact" onClick={toggleMobileMenu}>
             Contact
           </Link>
+          <Link className="hover:underline font-medium" href="/terms" onClick={toggleMobileMenu}>
+            Terms
+          </Link>
+          <Link className="hover:underline font-medium" href="/privacy" onClick={toggleMobileMenu}>
+            Privacy
+          </Link>
+          <Link className="hover:underline font-medium" href="/hours" onClick={toggleMobileMenu}>
+            Contact
+          </Link>
+         
         </nav>
-        <h2 className="font-medium text-white mt-12 text-center">Openingshours :</h2>
-        <ul className="font-medium text-center">
-          <li>Monday: 10AM - 11PM</li>
-          <li>Tuesday: 10AM - 11PM</li>
-          <li>Wednesday: 10AM - 11PM</li>
-          <li>Thursday: 10AM - 11PM</li>
-          <li>Friday: 10AM - 11PM</li>
-          <li>Saturday: 10AM - 6PM</li>
-          <li>Sunday: 10AM - 6PM</li>
-        </ul>
+        
       </div>
     </header>
   );

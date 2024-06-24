@@ -1,6 +1,6 @@
-import { DumbbellIcon } from "lucide-react"
-import Link from "next/link"
-import Logo from "@/components/ui/logo"
+import { DumbbellIcon } from "lucide-react";
+import Link from "next/link";
+import Logo from "@/components/ui/logo";
 
 const Footer = () => {
   return (
@@ -11,7 +11,7 @@ const Footer = () => {
             <Logo />
             <span className="text-lg font-medium">ROAR</span>
           </div>
-          <nav className="flex flex-col md:flex-row items-center gap-4">
+          <nav className="grid grid-cols-2 gap-4 text-sm md:flex md:flex-row md:items-center md:gap-4">
             <Link className="hover:underline font-medium" href="/privacy">
               Privacy Policy
             </Link>
@@ -28,7 +28,7 @@ const Footer = () => {
         </div>
       </footer>
     </div>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
