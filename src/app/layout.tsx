@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={myFont.className}>
+    <html lang="en" style={{fontFamily: myFont.style.fontFamily}}>
       <head>
         {/* Any additional head tags can be added here */}
       </head>
