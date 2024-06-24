@@ -23,9 +23,9 @@ const Page = () => {
                 </p>
               </div>
               <div className="ml-0 md:ml-20">
-                <img src="/artikel.png" alt="artikel" className="h-auto w-full md:h-[450px] rounded-xl" />
+                <img src="/artikel.png" alt="artikel" className="h-auto w-[400px] md:h-[450px] rounded-xl" />
                 <a href="https://www.hln.be/aarschot/net-open-stijn-dankers-24-opent-eigen-oldskool-gym-in-aarschot-ik-wil-mensen-helpen-de-beste-versie-van-zichzelf-te-worden~ae6789b8/" target="_blank">
-                  <Button variant="cart" className="w-full md:w-[325px] h-[50px] mt-4 flex items-center justify-center">
+                  <Button variant="cart" className="w-full md:w-[px] h-[50px] lg:w-[400px] mt-4 flex items-center justify-center">
                     Read more...
                   </Button>
                 </a>
