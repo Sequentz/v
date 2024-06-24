@@ -47,7 +47,7 @@ const Page = () => {
                   </div>
                   <div className="flex items-center gap-2">
                     <PhoneIcon className="h-6 w-6" />
-                    <a href="tel:0412345678">0412345678</a>
+                    <a href="tel:0486847377">0486847377</a>
                   </div>
                   <div className="flex items-center gap-2">
                     <MailIcon className="h-6 w-6" />
