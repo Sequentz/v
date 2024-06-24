@@ -3,6 +3,14 @@
 import { createContext, useState } from "react";
 
 export const CartContext = createContext();
+export const metedata = {
+  title: "CartContext",
+  description: "CartContext",
+  openGraph: {
+    title: "CartContext",
+    description: "CartContext",
+  },
+};
 
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]);

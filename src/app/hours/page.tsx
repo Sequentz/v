@@ -1,3 +1,12 @@
+export const metadata = {
+  title: "Hours",
+  description: "Opening Hours",
+  keywords: "hours",
+  openGraph: {
+    title: "Hours",
+    description: "Opening Hours",
+  },
+}
 const page = () => {
   return (
     <div>

@@ -1,7 +1,14 @@
 import { DumbbellIcon } from "lucide-react";
 import Link from "next/link";
 import Logo from "@/components/ui/logo";
-
+export const metadata = {
+  title: "Footer",
+  description: "Footer",
+  openGraph: {
+    title: "Footer",
+    description: "Footer",
+  },
+}
 const Footer = () => {
   return (
     <div>

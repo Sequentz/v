@@ -1,9 +1,17 @@
+export const metadata = {
+  title: "Privacy Policy",
+  description: "Privacy Policy",
+  openGraph: {
+    title: "Privacy Policy",
+    description: "Privacy Policy",
+  },
+}
 const page = () => {
   return (
     <div className="container mx-auto px-4 py-8 bg-gradient-to-r from-black via-gray-500 to-black">
     <h1 className="text-3xl md:text-5xl font-bold mb-4 font-medium text-white">Privacy Policy</h1>
     <p className="mb-4 text-gray-300">
-      This Privacy Policy outlines the types of personal information that is received and collected by [Your Webshop Name] ("we," "us," or "our") and how it is used.
+      This Privacy Policy outlines the types of personal information that is received and collected by ROAR  and how it is used.
     </p>
     <h2 className="text-2xl font-bold mt-8 mb-4 text-white">1. Information Collection</h2>
     <p className="mb-4 text-gray-300">
@@ -31,7 +39,7 @@ const page = () => {
     </p>
     <h2 className="text-2xl font-bold mt-8 mb-4 text-white">5. Disclosure to Third Parties</h2>
     <p className="mb-4 text-gray-300">
-      We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others' rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
+      We do not sell, trade, or otherwise transfer to outside parties your personally identifiable information. This does not include trusted third parties who assist us in operating our website, conducting our business, or servicing you, so long as those parties agree to keep this information confidential. We may also release your information when we believe release is appropriate to comply with the law, enforce our site policies, or protect ours or others rights, property, or safety. However, non-personally identifiable visitor information may be provided to other parties for marketing, advertising, or other uses.
     </p>
     <h2 className="text-2xl font-bold mt-8 mb-4 text-white">6. Third-Party Links</h2>
     <p className="mb-4 text-gray-300">

@@ -3,6 +3,14 @@
 import { useState } from "react";
 import Carousell from "./Carousel";
 import AddToCart from "./AddToCart";
+export const metadata = {
+  title: "Client Component",
+  description: "Client Component",
+  openGraph: {
+    title: "Client Component",
+    description: "Client Component",
+  },
+};
 
 const ClientSideComponent = ({ products, categories }) => {
   const [filteredProducts, setFilteredProducts] = useState(products);

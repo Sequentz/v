@@ -3,8 +3,15 @@ import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea"; // Make sure this is the correct path for Textarea
 import { Button } from "@/components/ui/button";
-import { MapPinIcon, PhoneIcon, MailIcon } from "@/components/contact";
-
+import { MapPinIcon, PhoneIcon, MailIcon } from "lucide-react";
+export const metadata = {
+  title: "Contact",
+  description: "Contact",
+  openGraph: {
+    title: "Contact",
+    description: "Contact",
+  },
+}
 const Page = () => {
   return (
     <div className="">

@@ -2,7 +2,14 @@
 "use client";
 
 import { useEffect, useState } from "react";
-
+export const metadata = {
+  title: "Cart",
+  description: "Cart",
+  openGraph: {
+    title: "Cart",
+    description: "Cart",
+  },
+};
 export default function Cart() {
   const [cart, setCart] = useState([]);
 

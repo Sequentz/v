@@ -1,7 +1,16 @@
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
+export const metadata = {
+  title: "Cart",
+  description: "Cart",
 
+  openGraph: {
+    title: "Cart",
+    description: "Cart",
+  },
+}
 export default function Cart() {
+  
   return (
     <div className="w-full min-h-screen bg-gradient-to-r from-black via-gray-500 to-black overflow-x-hidden">
       <div className="container mx-auto px-4 md:px-6">

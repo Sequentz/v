@@ -5,6 +5,14 @@ import { ShoppingCartIcon, MenuIcon, XIcon } from "lucide-react";
 import Link from "next/link";
 import Logo from "@/components/ui/logo";
 
+export const metadata = {
+  title: "Header",
+  description: "Header",
+  openGraph: {
+    title: "Header",
+    description: "Header",
+  },
+}
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
