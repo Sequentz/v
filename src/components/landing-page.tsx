@@ -26,13 +26,23 @@ To read more about using these fonts, please visit the Next.js documentation:
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Swiper from "swiper/bundle"
-import 'swiper/css/bundle'
+import 'swiper/css/bundle';
+
+async function fetchCategories() {
+  const res = await fetch('https://fakestoreapi.com/products/categories');
+  if (!res.ok) throw new Error('Failed to fetch categories');
+  return res.json();
+
+}
+
 
 export async function LandingPage() {
+  const categories = await fetchCategories();
+
   return (
     <div className="flex flex-col min-h-[100dvh] font-light">
       <main className="flex-1">
-        <section className="relative bg-gradient-to-r from-black via-gray-500 to-black py-12 md:py-20">
+        <section className="relative bg-gradient-to-r from-black via-gray-500 to-black py-12 md:py-20 h-full">
           <div className="container mx-auto px-4 md:px-6">
             <div className="grid md:grid-cols-2 gap-8 items-center">
               <div>
@@ -54,85 +64,19 @@ export async function LandingPage() {
             </div>
           </div>
         </section>
-        <section className="bg-gradient-to-r from-black via-gray-500 to-black py-12 md:py-20">
-          <div className="container mx-auto px-4 md:px-6">
-            <h2 className="text-2xl md:text-3xl font-bold mb-8 font-sans">Shop by Category</h2>
-            {/* {categories && categories.data.map((category) => (
-              <Link
-                className="bg-white rounded-lg shadow-md overflow-hidden"
-                href={`/category/${category.slug}`}
-                key={category.id}
-              >
-                <img
-                  alt="Category"
-                  className="w-full h-40 object-cover"
-                  height="200"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/200", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-lg font-bold mb-2">{category.category}</h3>
-                  <p className="text-gray-600">{category.description}</p>
+        <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-black via-gray-500 to-black py-12 md:py-20 h-full">
+              <h2 className="text-2xl md:text-4xl font-bold text-center font-medium mb-8">Shop by Category</h2>
+              <Link href={"/shop"}>
+                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                  {categories.map((category) => (
+                    <div key={category} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+                      <img src={category.image} alt="" />
+                      <h3 className="text-xl text-black font-semibold text-center">{category}</h3>
+                    </div>
+                  ))}
                 </div>
               </Link>
-            ))} */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-              <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
-                <img
-                  alt="Apparel"
-                  className="w-full h-40 object-cover"
-                  height="200"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/200", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-xl text-center text-black font-sans mb-2 font-medium">Apparel</h3>
-                </div>
-              </Link>
-              <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
-                <img
-                  alt="Supplements"
-                  className="w-full h-40 object-cover"
-                  height="200"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/200", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-xl text-center text-black font-sans mb-2 font-medium">Supplements</h3>
-                </div>
-              </Link>
-              <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
-                <img
-                  alt="Accessories"
-                  className="w-full h-40 object-cover"
-                  height="200"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/200", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-xl text-center text-black font-sans mb-2 font-medium">Accessories</h3>
-                </div>
-              </Link>
-              <Link className="bg-white rounded-lg shadow-md overflow-hidden" href="#">
-                <img
-                  alt="Equipment"
-                  className="w-full h-40 object-cover"
-                  height="200"
-                  src="/slide.png"
-                  style={{ aspectRatio: "300/200", objectFit: "cover" }}
-                  width="300"
-                />
-                <div className="p-4">
-                  <h3 className="text-xl text-center text-black font-sans mb-2 font-medium">Equipment</h3>
-                </div>
-              </Link>
-            </div>
-          </div>
-        </section>
+            </section>
       </main>
     </div>
   );
