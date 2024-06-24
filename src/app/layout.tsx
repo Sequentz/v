@@ -8,7 +8,7 @@ import localFont from 'next/font/local';
 
  
 const myFont = localFont({
-  src: '../../public/OPTIBankGothic-Medium.otf',
+  src: './OPTIBankGothic-Medium.otf',
   display: 'swap',
 })
 const inter = Inter({ subsets: ["latin"] });
@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" style={{fontFamily: myFont.style.fontFamily}}>
+    <html lang="en" className={myFont.className}>
       <head>
         {/* Any additional head tags can be added here */}
       </head>
