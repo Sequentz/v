@@ -39,10 +39,10 @@ export async function LandingPage() {
                 </p>
                 <div className="flex gap-4">
                   <Link href="/shop">
-                    <Button size="lg" variant="outline"  className="font-sans text-black">Shop Now</Button>
+                    <Button size="lg" variant="outline"  className="font-medium text-black">Shop Now</Button>
                   </Link>
                   <Link href="/about">
-                    <Button size="lg" variant="outline" className="font-sans text-black">Learn More</Button>
+                    <Button size="lg" variant="outline" className="font-medium text-black">Learn More</Button>
                   </Link>
                 </div>
               </div>
