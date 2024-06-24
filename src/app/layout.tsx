@@ -8,7 +8,7 @@ import localFont from 'next/font/local';
 
  
 const myFont = localFont({
-  src: '/OPTIBankGothic-Medium.otf',
+  src: './OPTIBankGothic-Medium.otf',
   display: 'swap',
 })
 const inter = Inter({ subsets: ["latin"] });
