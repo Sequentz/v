@@ -9,8 +9,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ['OPTIBankGothic-Medium', 'sans-serif'],
-      lght: ['OPTIBankGothic-Light', 'sans-serif'],
+      sans: ['OPTIBankGothic-Medium.otf', 'sans-serif'],
+      lght: ['OPTIBankGothic-Light.tof', 'sans-serif'],
       // Add more font styles if needed
     },
     extend: {
@@ -25,5 +25,7 @@ const config: Config = {
     require('flowbite/plugin')
   ],
 };
+
+
 
 export default config;
