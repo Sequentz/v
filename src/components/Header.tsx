@@ -1,49 +1,99 @@
-import { Button } from "@/components/ui/button"
-import { DumbbellIcon, SearchIcon } from "lucide-react"
-import Link from "next/link"
-import { ShoppingCartIcon } from "lucide-react"
-import Logo from "@/components/ui/logo"
+"use client";
+import { useState } from "react";
+import { Button } from "@/components/ui/button";
+import { ShoppingCartIcon, MenuIcon, XIcon } from "lucide-react";
+import Link from "next/link";
+import Logo from "@/components/ui/logo";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
-    
-      <header className="bg-black text-white py-4 px-6 md:px-10 flex items-center justify-between ">
-        <Link className="flex items-center gap-2" href="/">
-          <Logo />
-          <span className="text-xl font-medium">ROAR</span>
-        </Link>
-        <nav className="hidden md:flex items-center gap-6 ">
+    <header className="bg-black text-white py-4 px-6 md:px-10 flex items-center justify-between relative z-50">
+      <Link className="flex items-center gap-2" href="/">
+        <Logo />
+        <span className="text-xl font-medium">ROAR</span>
+      </Link>
+      <nav className="hidden md:flex items-center gap-6">
         <Link className="hover:underline font-medium" href="/">
-            Home
-            
-          </Link>
-          <Link className="hover:underline font-medium" href="/shop">
-            Shop
-          </Link>
-          <Link className="hover:underline font-medium" href="/about">
-            About
-          </Link>
-          <Link className="hover:underline font-medium" href="/contact">
-            Contact
-          </Link>
-        </nav>
-        <div className="flex items-center gap-4">
-          <Button className="rounded-full" size="icon" variant="ghost">
-            <SearchIcon className="h-6 w-6" />
-            <span className="sr-only">Search</span>
-          </Button>
-          <Link className="hover:underline" href="/cart">
+          Home
+        </Link>
+        <Link className="hover:underline font-medium" href="/shop">
+          Shop
+        </Link>
+        <Link className="hover:underline font-medium" href="/about">
+          About
+        </Link>
+        <Link className="hover:underline font-medium" href="/contact">
+          Contact
+        </Link>
+      </nav>
+      <div className="flex items-center gap-4">
+        <Link className="hover:underline" href="/cart">
           <Button className="rounded-full" size="icon" variant="ghost">
             <ShoppingCartIcon className="h-6 w-6" />
             <span className="sr-only">Cart</span>
           </Button>
+        </Link>
+        <button
+          className="md:hidden focus:outline-none"
+          onClick={toggleMobileMenu}
+        >
+          {isMobileMenuOpen ? (
+            <XIcon className="h-6 w-6" />
+          ) : (
+            <MenuIcon className="h-6 w-6" />
+          )}
+        </button>
+      </div>
+      <div
+        className={`fixed top-0 left-0 h-full w-full bg-black text-white transform transition-transform duration-300 ease-in-out z-50 ${
+          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+        }`}
+      >
+        <div className="flex justify-between items-center py-4 px-6">
+          <Link className="flex items-center gap-2" href="/">
+            <Logo />
+            <span className="text-xl font-medium">ROAR</span>
           </Link>
+          <button
+            className="focus:outline-none"
+            onClick={toggleMobileMenu}
+          >
+            <XIcon className="h-6 w-6" />
+          </button>
         </div>
-      </header>
-      
-  )
-}
+        <nav className="flex flex-col items-center gap-6 mt-8">
+          <Link className="hover:underline font-medium" href="/" onClick={toggleMobileMenu}>
+            Home
+          </Link>
+          <Link className="hover:underline font-medium" href="/shop" onClick={toggleMobileMenu}>
+            Shop
+          </Link>
+          <Link className="hover:underline font-medium" href="/about" onClick={toggleMobileMenu}>
+            About
+          </Link>
+          <Link className="hover:underline font-medium" href="/contact" onClick={toggleMobileMenu}>
+            Contact
+          </Link>
+        </nav>
+        <h2 className="font-medium text-white mt-12 text-center">Openingshours :</h2>
+        <ul className="font-medium text-center">
+          <li>Monday: 10AM - 11PM</li>
+          <li>Tuesday: 10AM - 11PM</li>
+          <li>Wednesday: 10AM - 11PM</li>
+          <li>Thursday: 10AM - 11PM</li>
+          <li>Friday: 10AM - 11PM</li>
+          <li>Saturday: 10AM - 6PM</li>
+          <li>Sunday: 10AM - 6PM</li>
+        </ul>
+      </div>
+    </header>
+  );
+};
+
 export default Header;
-
-
-    
