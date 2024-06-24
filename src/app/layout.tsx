@@ -10,8 +10,9 @@ import localFont from 'next/font/local';
 const myFont = localFont({
   src: './OPTIBankGothic-Medium.otf',
   display: 'swap',
+  variable: '--font-medium',
 })
-const inter = Inter({ subsets: ["latin"] });
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -24,11 +25,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={myFont.className}>
+    <html lang="en"  className={myFont.variable}>
       <head>
         {/* Any additional head tags can be added here */}
       </head>
-      <body className={inter.className}>
+      <body>
         <CartProvider>
           <Header />
           <main>{children}</main>

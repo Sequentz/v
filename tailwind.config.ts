@@ -8,12 +8,15 @@ const config: Config = {
     "node_modules/flowbite-react/**/*.{js,jsx,ts,tsx}", // Added for Flowbite
   ],
   theme: {
-    fontFamily: {
-      medium: ['OPTIBankGothic-Medium.otf', 'sans-serif'],
-      lght: ['OPTIBankGothic-Light.otf', 'sans-serif'],
-      // Add more font styles if needed
-    },
+    // fontFamily: {
+    //   medium: ['OPTIBankGothic-Medium.otf', 'sans-serif'],
+    //   lght: ['OPTIBankGothic-Light.otf', 'sans-serif'],
+    //   // Add more font styles if needed
+    // },
     extend: {
+      fontFamily: {
+        medium: ['var(--font-medium)'],
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
