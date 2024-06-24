@@ -9,8 +9,8 @@ const config: Config = {
   ],
   theme: {
     fontFamily: {
-      sans: ['OPTIBankGothic-Medium.ttf', 'sans-serif'],
-      lght: ['OPTIBankGothic-Light.ttf', 'sans-serif'],
+      sans: ['OPTIBankGothic-Medium.otf', 'sans-serif'],
+      lght: ['OPTIBankGothic-Light.otf', 'sans-serif'],
       // Add more font styles if needed
     },
     extend: {
