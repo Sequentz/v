@@ -61,7 +61,7 @@ const page = () => {
     <p className="text-gray-300">
       If there are any questions regarding this privacy policy you may contact us using the information below.
       <br />
-      <a href="mailto:your-email@yourwebsite.com" className="text-blue-500 underline">your-email@yourwebsite.com</a>
+      <a href="mailto:your-email@yourwebsite.com" className="text-blue-500 underline">info@roarcoaching.be</a>
     </p>
   </div>
   )

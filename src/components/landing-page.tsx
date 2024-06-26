@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Swiper from "swiper/bundle"
 import 'swiper/css/bundle';
+import SlideInImages from "./SlideInImages";
 
 async function fetchCategories() {
   const res = await fetch('https://fakestoreapi.com/products/categories');
@@ -28,16 +29,16 @@ export async function LandingPage() {
     <div className="flex flex-col min-h-[100dvh] font-light">
   <main className="flex-1 relative">
   <div className="relative">
-    <img src="/slide.png" alt="banner" className="w-full h-96 object-cover" />
+    <img src="/slide.png" alt="banner" className="w-full h-screen object-cover grayscale opacity-50" />
     <section className="absolute inset-0 flex items-center justify-center ">
-      <div className="container mx-auto px-4 md:px-6 text-center">
-        <h1 className="text-3xl md:text-5xl font-bold mb-4">
-          Welcome to <strong className="text-black font-medium">ROAR .</strong>
+      <div className="container mx-auto px-4 md:px-6 ">
+        <h1 className="sm:text-5xl md:text-5xl lg:text-7xl  font-bold mb-4">
+          Welcome to <strong className="text-white font-medium">ROAR .</strong>
         </h1>
-        <p className="text-gray-400 mb-6">
+        <p className="text-white font-bold mb-6">
           Old School training facility that focuses on quality, not quantity.
         </p>
-        <div className="flex gap-4 justify-center">
+        <div className="flex gap-4 justify-start">
           <Link href="/shop">
             <Button size="lg" variant="shop" className="font-medium">Shop Now</Button>
           </Link>
@@ -48,22 +49,83 @@ export async function LandingPage() {
       </div>
     </section>
   </div>
-  <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-slate-300 to-slate-500 h-full">
-    <h2 className="text-2xl md:text-4xl font-bold text-center font-medium mb-8">Shop by Category</h2>
-    <Link href={"/shop"}>
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-        {categories.map((category: any) => (
-          <div key={category} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-            <img src={category.image} alt="" />
-            <h3 className="text-xl text-black font-semibold text-center">{category}</h3>
-          </div>
-        ))}
-      </div>
-    </Link>
+  <div className="relative">
+  <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-gray-100 to-gray-300 h-full grid grid-cols-2 gap-8">
+    <SlideInImages />
+    <div className="flex items-center mb-40 mr-40 justify-center align-top pr-8 col-span-1">
+      <h3 className="text-black text-3xl md:text-3xl font-medium">ROAR in het kort</h3>
+    
+      <p className="font-sans text-gray-700">Roar is an old-school gym facility dedicated to prioritizing quality over quantity. Our members are committed individuals focused solely on serious training. Here, there are no games, no TikTok distractions—just a singular dedication to achieving the best version of themselves.</p>
+    </div>
   </section>
-  <img src="/dumbell.png" alt="dumbell" className="w-full h-96 object-cover grayscale opacity-50" />
+</div>
 
-  <h2>Roar in het kort</h2>
+  <img src="/dumbell.png" alt="dumbell" className="w-full h-96 object-cover grayscale opacity-50" />
+  <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-slate-300 to-slate-500 h-full justify-center items-center">
+  
+  <div className="flex justify-center py-10">
+    <div className="flex flex-wrap gap-4 justify-center">
+        <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
+            <p className="text-lg font-bold mb-2">Jason Dehaes</p>
+            <p className="mb-2">This is a great product that you will love. Here is its rating:</p>
+            <div className="flex items-center">
+                <div className="flex gap-1 text-yellow-400">
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl text-gray-300">★</span>
+                </div>
+                <span className="ml-2 text-gray-600">(4.0)</span>
+            </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
+            <p className="text-lg font-bold mb-2">Silke Lowet</p>
+            <p className="mb-2">This is a great product that you will love. Here is its rating:</p>
+            <div className="flex items-center">
+                <div className="flex gap-1 text-yellow-400">
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl text-gray-300">★</span>
+                </div>
+                <span className="ml-2 text-gray-600">(4.0)</span>
+            </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
+            <p className="text-lg font-bold mb-2">Samuel Sulek</p>
+            <p className="mb-2">This is a great product that you will love. Here is its rating:</p>
+            <div className="flex items-center">
+                <div className="flex gap-1 text-yellow-400">
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl text-gray-300">★</span>
+                </div>
+                <span className="ml-2 text-gray-600">(4.0)</span>
+            </div>
+        </div>
+        <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
+            <p className="text-lg font-bold mb-2">Sarah Smith</p>
+            <p className="mb-2">This is a great product that you will love. Here is its rating:</p>
+            <div className="flex items-center">
+                <div className="flex gap-1 text-yellow-400">
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl">★</span>
+                    <span className="text-xl text-gray-300">★</span>
+                </div>
+                <span className="ml-2 text-gray-600">(4.0)</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+   
+  </section>
 </main>
 
 

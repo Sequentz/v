@@ -1,0 +1,18 @@
+/* SlideInImages.css */
+
+/* Component-specific styles */
+.slide-in-left {
+  animation: slideInLeftAnimation 1s ease forwards;
+  opacity: 0; /* Start with opacity 0 to fade in */
+}
+
+@keyframes slideInLeftAnimation {
+  0% {
+    transform: translateX(-100%); /* Start off-screen to the left */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Slide in to the original position */
+    opacity: 1;
+  }
+}

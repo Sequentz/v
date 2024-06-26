@@ -14,9 +14,10 @@ const buttonVariants = cva(
         default: "bg-gray-900 text-gray-50 hover:bg-gray-900/90 dark:bg-gray-50 dark:text-gray-900 dark:hover:bg-gray-50/90",
         destructive:
           "bg-red-500 text-gray-50 hover:bg-red-500/90 dark:bg-red-900 dark:text-gray-50 dark:hover:bg-red-900/90",
-          shop: "text-white border border-gray-400 bg-gradient-to-t from-rose-600 to-red-800 hover:bg-gray-400 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 transform active:translate-x-0.5 active:translate-y-0.5 active:scale-95 active:shadow-inner transition-transform duration-150 hover:bg-gradient-to-b from-rose-600 to-red-800 transition transform hover:-translate-y-1 duration-300",
+          shop: "text-white  border-gray-400 bg-gradient-to-t from-rose-600 to-red-800 hover:bg-gray-400 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 transform active:translate-x-0.5 active:translate-y-0.5 active:scale-95 active:shadow-inner transition-transform duration-150 hover:bg-gradient-to-b from-rose-600 to-red-800 transition transform hover:-translate-y-1 duration-200",
         outline:
-          "border border-gray-400 bg-white hover:bg-gray-400 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 transform active:translate-x-0.5 active:translate-y-0.5 active:scale-95 active:shadow-inner transition-transform duration-150 transition transform hover:-translate-y-1 duration-300",
+          "  bg-white hover:bg-gray-400 hover:text-gray-900 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 transform active:translate-x-0.5 active:translate-y-0.5 active:scale-95 active:shadow-inner transition-transform duration-150 transition transform hover:-translate-y-1 duration-200",
+          
         secondary:
           "bg-red-700 text-gray-900 hover:bg-gray-100/80 dark:bg-gray-800 dark:text-gray-50 dark:hover:bg-gray-800/80",
         ghost: "hover:bg-gray-100 hover:text-gray-900 dark:hover:bg-gray-800 dark:hover:text-gray-50",
