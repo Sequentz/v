@@ -18,7 +18,7 @@ const Page = () => {
       <main className="flex-1 font-medium text-black">
         <section className="bg-gradient-to-r from-slate-300 to-slate-500">
           <div className="">
-          <div className="relative w-full h-[700px]">
+          <div className="relative w-full h-[300px]">
     <img src="/dumbell.png" alt="dumbell banner" className="absolute inset-0 w-full h-full object-cover grayscale brightness-50" />
     <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="text-3xl md:text-5xl lg:text-6xl font-medium mb-8 tracking-wider text-white text-center">Contact us!</h1>

@@ -16,3 +16,12 @@
     opacity: 1;
   }
 }
+.visible {
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.visible.slide-in-left {
+  opacity: 1;
+  transform: translateX(-100px); /* Adjust for your desired slide-in distance */
+}

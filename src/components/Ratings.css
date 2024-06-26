@@ -1,0 +1,15 @@
+.ratings-container {
+  /* Assuming you named the outer container class */
+  opacity: 0; /* Initial opacity: hidden */
+  transition: opacity 0.5s ease-in-out; /* Transition for fade-in */
+}
+
+.ratings-container.visible {
+  /* Add a visible class for animation */
+  opacity: 1; /* Opacity: visible */
+}
+
+.rating-item {
+  /* Class for individual rating items */
+  /* Add any specific styles for the rating items here */
+}

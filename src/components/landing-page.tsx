@@ -4,6 +4,9 @@ import { Button } from "@/components/ui/button";
 import Swiper from "swiper/bundle"
 import 'swiper/css/bundle';
 import SlideInImages from "./SlideInImages";
+import Text from "./Text";
+import Ratings from "./Ratings";
+
 
 async function fetchCategories() {
   const res = await fetch('https://fakestoreapi.com/products/categories');
@@ -52,78 +55,15 @@ export async function LandingPage() {
   <div className="relative">
   <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-gray-100 to-gray-300 h-full grid grid-cols-2 gap-8">
     <SlideInImages />
-    <div className="flex items-center mb-40 mr-40 justify-center align-top pr-8 col-span-1">
-      <h3 className="text-black text-3xl md:text-3xl font-medium">ROAR in het kort</h3>
-    
-      <p className="font-sans text-gray-700">Roar is an old-school gym facility dedicated to prioritizing quality over quantity. Our members are committed individuals focused solely on serious training. Here, there are no games, no TikTok distractions—just a singular dedication to achieving the best version of themselves.</p>
-    </div>
+    <Text />
+
   </section>
 </div>
 
   <img src="/dumbell.png" alt="dumbell" className="w-full h-96 object-cover grayscale opacity-50" />
   <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-slate-300 to-slate-500 h-full justify-center items-center">
   
-  <div className="flex justify-center py-10">
-    <div className="flex flex-wrap gap-4 justify-center">
-        <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
-            <p className="text-lg font-bold mb-2">Jason Dehaes</p>
-            <p className="mb-2">This is a great product that you will love. Here is its rating:</p>
-            <div className="flex items-center">
-                <div className="flex gap-1 text-yellow-400">
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl text-gray-300">★</span>
-                </div>
-                <span className="ml-2 text-gray-600">(4.0)</span>
-            </div>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
-            <p className="text-lg font-bold mb-2">Silke Lowet</p>
-            <p className="mb-2">This is a great product that you will love. Here is its rating:</p>
-            <div className="flex items-center">
-                <div className="flex gap-1 text-yellow-400">
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl text-gray-300">★</span>
-                </div>
-                <span className="ml-2 text-gray-600">(4.0)</span>
-            </div>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
-            <p className="text-lg font-bold mb-2">Samuel Sulek</p>
-            <p className="mb-2">This is a great product that you will love. Here is its rating:</p>
-            <div className="flex items-center">
-                <div className="flex gap-1 text-yellow-400">
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl text-gray-300">★</span>
-                </div>
-                <span className="ml-2 text-gray-600">(4.0)</span>
-            </div>
-        </div>
-        <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
-            <p className="text-lg font-bold mb-2">Sarah Smith</p>
-            <p className="mb-2">This is a great product that you will love. Here is its rating:</p>
-            <div className="flex items-center">
-                <div className="flex gap-1 text-yellow-400">
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl">★</span>
-                    <span className="text-xl text-gray-300">★</span>
-                </div>
-                <span className="ml-2 text-gray-600">(4.0)</span>
-            </div>
-        </div>
-    </div>
-</div>
-
+  <Ratings />
    
   </section>
 </main>

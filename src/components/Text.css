@@ -1,0 +1,20 @@
+/* SlideInImages.css */
+
+/* Component-specific styles */
+.slide-in-right {
+  /* Rename class to indicate right slide */
+  animation: slideInRightAnimation 1s ease forwards;
+  opacity: 0; /* Start with opacity 0 to fade in */
+  opacity: inherit;
+}
+
+@keyframes slideInRightAnimation {
+  0% {
+    transform: translateX(100%); /* Start off-screen to the right */
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0); /* Slide in to the original position */
+    opacity: 1;
+  }
+}
