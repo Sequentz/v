@@ -61,6 +61,54 @@ const Ratings = () => {
               <span className="ml-2 text-gray-600">(4.0)</span>
             </div>
           </div>
+          <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
+            <p className="text-lg font-bold mb-2">Silke Lowet</p>
+            <p className="mb-2">
+              This is a great product that you will love. Here is its rating:
+            </p>
+            <div className="flex items-center">
+              <div className="flex gap-1 text-yellow-400">
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl text-gray-300">★</span>
+              </div>
+              <span className="ml-2 text-gray-600">(4.0)</span>
+            </div>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
+            <p className="text-lg font-bold mb-2">Silke Lowet</p>
+            <p className="mb-2">
+              This is a great product that you will love. Here is its rating:
+            </p>
+            <div className="flex items-center">
+              <div className="flex gap-1 text-yellow-400">
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl text-gray-300">★</span>
+              </div>
+              <span className="ml-2 text-gray-600">(4.0)</span>
+            </div>
+          </div>
+          <div className="bg-white rounded-lg shadow-md p-4 relative w-60 text-black font-sans">
+            <p className="text-lg font-bold mb-2">Silke Lowet</p>
+            <p className="mb-2">
+              This is a great product that you will love. Here is its rating:
+            </p>
+            <div className="flex items-center">
+              <div className="flex gap-1 text-yellow-400">
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl">★</span>
+                <span className="text-xl text-gray-300">★</span>
+              </div>
+              <span className="ml-2 text-gray-600">(4.0)</span>
+            </div>
+          </div>
           {/* Add more ratings as needed */}
         </div>
       </div>

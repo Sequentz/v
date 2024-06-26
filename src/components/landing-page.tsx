@@ -1,79 +1,70 @@
-
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import Swiper from "swiper/bundle"
+import Swiper from "swiper/bundle";
 import 'swiper/css/bundle';
 import SlideInImages from "./SlideInImages";
 import Text from "./Text";
 import Ratings from "./Ratings";
 
-
 async function fetchCategories() {
   const res = await fetch('https://fakestoreapi.com/products/categories');
   if (!res.ok) throw new Error('Failed to fetch categories');
   return res.json();
-
 }
 
 export const metadata = {
   title: 'ROAR .',
   description: 'Welcome to ROAR .',
 
-openGraph: {
-  title: "ROAR .",
-  description: "Welcome to ROAR .",
-},
-}
+  openGraph: {
+    title: "ROAR .",
+    description: "Welcome to ROAR .",
+  },
+};
 
 export async function LandingPage() {
   const categories = await fetchCategories();
 
   return (
-    <div className="flex flex-col min-h-[100dvh] font-light">
-  <main className="flex-1 relative">
-  <div className="relative">
-    <img src="/slide.png" alt="banner" className="w-full h-screen object-cover grayscale opacity-50" />
-    <section className="absolute inset-0 flex items-center justify-center ">
-      <div className="container mx-auto px-4 md:px-6 ">
-        <h1 className="sm:text-5xl md:text-5xl lg:text-7xl  font-bold mb-4">
-          Welcome to <strong className="text-white font-medium">ROAR .</strong>
-        </h1>
-        <p className="text-white font-bold mb-6">
-          Old School training facility that focuses on quality, not quantity.
-        </p>
-        <div className="flex gap-4 justify-start">
-          <Link href="/shop">
-            <Button size="lg" variant="shop" className="font-medium">Shop Now</Button>
-          </Link>
-          <Link href="/about">
-            <Button size="lg" variant="outline" className="font-medium text-black">Learn More</Button>
-          </Link>
+    <div className="flex flex-col min-h-screen font-light">
+      <main className="flex-1 relative">
+        <div className="relative">
+          <img src="/slide.png" alt="banner" className="w-full h-[50vh] md:h-screen object-cover grayscale opacity-50" />
+          <section className="absolute inset-0 flex items-center justify-center p-4 md:p-0">
+            <div className="container mx-auto text-center md:text-left">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold mb-4 text-white">
+                Welcome to <strong className="font-medium">ROAR .</strong>
+              </h1>
+              <p className="text-white font-bold mb-6">
+                Old School training facility that focuses on quality, not quantity.
+              </p>
+              <div className="flex flex-col md:flex-row gap-4 justify-center md:justify-start">
+                <Link href="/shop">
+                  <Button size="lg" variant="shop" className="font-medium">Shop Now</Button>
+                </Link>
+                <Link href="/about">
+                  <Button size="lg" variant="outline" className="font-medium text-black">Learn More</Button>
+                </Link>
+              </div>
+            </div>
+          </section>
         </div>
-      </div>
-    </section>
-  </div>
-  <div className="relative">
-  <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-gray-100 to-gray-300 h-full grid grid-cols-2 gap-8">
-    <SlideInImages />
-    <Text />
-
-  </section>
-</div>
-
-  <img src="/dumbell.png" alt="dumbell" className="w-full h-96 object-cover grayscale opacity-50" />
-  <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-slate-300 to-slate-500 h-full justify-center items-center">
-  
-  <Ratings />
-   
-  </section>
-</main>
-
-
+        <div className="relative">
+          <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-gray-100 to-gray-300 h-full grid grid-cols-1 md:grid-cols-2 gap-8 px-4 md:px-8">
+            <SlideInImages />
+            <Text />
+          </section>
+        </div>
+        <img src="/dumbell.png" alt="dumbell" className="w-full h-48 md:h-96 object-cover grayscale opacity-50" />
+        <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-slate-300 to-slate-500 h-full flex justify-center items-center px-4 md:px-8">
+          <Ratings />
+        </section>
+      </main>
     </div>
   );
 }
 
-function DumbbellIcon(props:any) {
+function DumbbellIcon(props: any) {
   return (
     <svg
       {...props}
@@ -96,7 +87,7 @@ function DumbbellIcon(props:any) {
   );
 }
 
-function SearchIcon(props:any) {
+function SearchIcon(props: any) {
   return (
     <svg
       {...props}
@@ -116,7 +107,7 @@ function SearchIcon(props:any) {
   );
 }
 
-function ShoppingCartIcon(props:any) {
+function ShoppingCartIcon(props: any) {
   return (
     <svg
       {...props}
