@@ -26,43 +26,47 @@ export async function LandingPage() {
 
   return (
     <div className="flex flex-col min-h-[100dvh] font-light">
-      <main className="flex-1">
-        <section className="relative bg-gradient-to-r from-black via-gray-500 to-black py-12 md:py-20 h-full">
-          <div className="container mx-auto px-4 md:px-6">
-            <div className="grid md:grid-cols-2 gap-8 items-center">
-              <div>
-                <h1 className="text-3xl md:text-5xl font-bold mb-4">
-                  Welcome to <strong className="text-black font-medium">ROAR .</strong>
-                </h1>
-                <p className="text-gray-400 mb-6">
-                  Old School training facility that focuses on quality, not quantity.
-                </p>
-                <div className="flex gap-4">
-                  <Link href="/shop">
-                    <Button size="lg" variant="outline"  className="font-medium text-black">Shop Now</Button>
-                  </Link>
-                  <Link href="/about">
-                    <Button size="lg" variant="outline" className="font-medium text-black">Learn More</Button>
-                  </Link>
-                </div>
-              </div>
-            </div>
+  <main className="flex-1 relative">
+  <div className="relative">
+    <img src="/slide.png" alt="banner" className="w-full h-96 object-cover" />
+    <section className="absolute inset-0 flex items-center justify-center ">
+      <div className="container mx-auto px-4 md:px-6 text-center">
+        <h1 className="text-3xl md:text-5xl font-bold mb-4">
+          Welcome to <strong className="text-black font-medium">ROAR .</strong>
+        </h1>
+        <p className="text-gray-400 mb-6">
+          Old School training facility that focuses on quality, not quantity.
+        </p>
+        <div className="flex gap-4 justify-center">
+          <Link href="/shop">
+            <Button size="lg" variant="shop" className="font-medium">Shop Now</Button>
+          </Link>
+          <Link href="/about">
+            <Button size="lg" variant="outline" className="font-medium text-black">Learn More</Button>
+          </Link>
+        </div>
+      </div>
+    </section>
+  </div>
+  <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-slate-300 to-slate-500 h-full">
+    <h2 className="text-2xl md:text-4xl font-bold text-center font-medium mb-8">Shop by Category</h2>
+    <Link href={"/shop"}>
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        {categories.map((category: any) => (
+          <div key={category} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
+            <img src={category.image} alt="" />
+            <h3 className="text-xl text-black font-semibold text-center">{category}</h3>
           </div>
-        </section>
-        <section className="py-12 md:py-20 font-medium bg-gradient-to-r from-black via-gray-500 to-black py-12 md:py-20 h-full">
-              <h2 className="text-2xl md:text-4xl font-bold text-center font-medium mb-8">Shop by Category</h2>
-              <Link href={"/shop"}>
-                <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                  {categories.map((category:any) => (
-                    <div key={category} className="bg-white p-6 rounded-lg shadow-md hover:shadow-lg transition-shadow">
-                      <img src={category.image} alt="" />
-                      <h3 className="text-xl text-black font-semibold text-center">{category}</h3>
-                    </div>
-                  ))}
-                </div>
-              </Link>
-            </section>
-      </main>
+        ))}
+      </div>
+    </Link>
+  </section>
+  <img src="/dumbell.png" alt="dumbell" className="w-full h-96 object-cover grayscale opacity-50" />
+
+  <h2>Roar in het kort</h2>
+</main>
+
+
     </div>
   );
 }

@@ -21,7 +21,7 @@ const Header = () => {
   };
 
   return (
-    <header className="bg-black text-white py-4 px-6 md:px-10 flex items-center justify-between relative z-50">
+    <header className="bg-gradient-to-t from-rose-600 to-red-800 text-white py-4 px-6 md:px-10 flex items-center justify-between relative z-50">
       <Link className="flex items-center gap-2" href="/">
         <Logo />
         <span className="text-xl font-medium">ROAR</span>

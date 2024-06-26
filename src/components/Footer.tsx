@@ -12,7 +12,7 @@ export const metadata = {
 const Footer = () => {
   return (
     <div>
-      <footer className="bg-black text-white py-6 px-4 md:px-8">
+      <footer className="bg-gradient-to-b from-rose-600 to-red-800 text-white py-6 px-4 md:px-8">
         <div className="container mx-auto flex flex-col md:flex-row items-center justify-between">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <Logo />
