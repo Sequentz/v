@@ -12,7 +12,8 @@ export const metadata = {
     title: "Header",
     description: "Header",
   },
-}
+};
+
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -95,11 +96,9 @@ const Header = () => {
             Privacy
           </Link>
           <Link className="hover:underline font-medium" href="/hours" onClick={toggleMobileMenu}>
-            Contact
+            Hours
           </Link>
-         
         </nav>
-        
       </div>
     </header>
   );
