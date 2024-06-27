@@ -17,7 +17,7 @@ export default function Cart() {
         <h2 className="text-2xl md:text-3xl font-bold mb-8 font-medium text-center md:text-left">Your Cart</h2>
         <div className="rounded-lg p-6">
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-            <div className="bg-gray-100 rounded-lg p-4">
+            <div className="bg-gray-100 rounded-lg p-4 ">
               <img
                 alt="Product"
                 className="w-full h-32 object-cover mb-4"
