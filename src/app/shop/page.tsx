@@ -1,4 +1,4 @@
-import Carousell from '../../components/Carousel';
+import Carousel from '../../components/Carousel';
 import AddToCart from '../../components/AddToCart';
 import ClientComponent from '../../components/ClientComponent';
 
@@ -15,11 +15,13 @@ async function fetchCategories() {
   if (!res.ok) throw new Error('Failed to fetch categories');
   return res.json();
 }
+
 export const metadata = {
   title: 'Shop',
   description: 'Roar now, miauw later',
   keywords: 'Roar, miauw, later',
-}
+};
+
 export default async function Shop() {
   const products = await fetchProducts();
   const categories = await fetchCategories();
