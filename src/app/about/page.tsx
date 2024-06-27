@@ -25,7 +25,7 @@ const Page = () => {
               <div className="ml-0 md:ml-20">
                 <img src="/artikel.png" alt="artikel" className="h-auto w-[400px] md:h-[450px] rounded-xl" />
                 <a href="https://www.hln.be/aarschot/net-open-stijn-dankers-24-opent-eigen-oldskool-gym-in-aarschot-ik-wil-mensen-helpen-de-beste-versie-van-zichzelf-te-worden~ae6789b8/" target="_blank">
-                  <Button variant="shop" className="w-full md:w-[px] h-[50px] lg:w-[400px] mt-4 flex items-center justify-center">
+                  <Button variant="shop" className="w-full md:w-auto h-[50px] lg:w-[400px] mt-4 flex items-center justify-center">
                     Read more...
                   </Button>
                 </a>
@@ -38,14 +38,13 @@ const Page = () => {
           <div className="container mx-auto px-6 md:px-8">
             <h2 className="text-2xl md:text-3xl font-bold mb-10">Evolution</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-
-                <div className="bg-white rounded-lg shadow-md overflow-hidden ">
-                  <img src="/roar.png" alt="" />
-                  <div className="p-6">
-                  
-                  </div>
+              <div className="bg-white rounded-lg shadow-md overflow-hidden">
+                <img src="/roar.png" alt="Roar" />
+                <div className="p-6">
+                  {/* Add additional content if needed */}
                 </div>
-              
+              </div>
+              {/* Add more items here if needed */}
             </div>
           </div>
         </section>
