@@ -7,9 +7,12 @@ const Text = () => {
   const textRef = useRef(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      setTextVisible(entries[0].isIntersecting);
-    });
+    const observer = new IntersectionObserver(
+      (entries) => {
+        setTextVisible(entries[0].isIntersecting);
+      },
+      { threshold: 0.5 }
+    );
 
     if (textRef.current) {
       observer.observe(textRef.current);
@@ -20,15 +23,16 @@ const Text = () => {
         observer.unobserve(textRef.current);
       }
     };
-  }, [textRef]); // Dependency on textRef to ensure observer is attached/detached
+  }, [textRef]);
 
   return (
     <div ref={textRef}>
       <div className="mr-48">
         <h3
-          className={`text-black text-4xl ${
+          className={`text-black pb-16 ${
             textVisible ? "slide-in-right visible" : ""
           }`}
+          style={{ fontSize: "calc(2rem + 1vw)" }}
         >
           Roar in het kort
         </h3>
@@ -36,6 +40,7 @@ const Text = () => {
           className={`text-black font-sans ${
             textVisible ? "slide-in-left visible" : ""
           }`}
+          style={{ fontSize: "calc(1rem + 0.5vw)" }}
         >
           Leave the games at the door. ROAR is for those who prioritize quality
           training and unleash their potential. We focus on efficiency,

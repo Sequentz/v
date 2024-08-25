@@ -26,7 +26,7 @@ export async function LandingPage() {
   const categories = await fetchCategories();
 
   return (
-    <div className="flex flex-col min-h-screen font-light">
+    <div className="flex flex-col min-h-screen font-light overflow-hidden">
       <main className="flex-1 relative">
         <div className="relative">
           <img src="/slide.png" alt="banner" className="w-full h-[50vh] md:h-screen object-cover grayscale opacity-50" />
